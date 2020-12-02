@@ -12,8 +12,9 @@ short dice()
     return uniform_dist(e);
 }
 
-main()
+int main()
 {
     short a = dice();
     cout << a;
+    return 0;
 }
