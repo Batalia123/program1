@@ -7,4 +7,7 @@ jobs:
         platform: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-    - run: echo hello world
+    - uses: actions/checkout@v2
+    - run: g++ -o random random.cpp
+    - run: ./random
+    - run: ./random
